@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare flexible plans and choose the right subscription for you.">
+    <title>Planora | Simple Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="pricing-page">
+        <header class="hero">
+            <span class="eyebrow">SIMPLE, TRANSPARENT PRICING</span>
+            <h1>Plans that fit <span>your ambition.</span></h1>
+            <p>Everything you need to do your best work. Start small and grow at your own pace.</p>
+
+            <div class="billing-switch">
+                <span id="monthly-label" class="billing-label active">Monthly</span>
+
+                <button
+                    type="button"
+                    id="billing-toggle"
+                    class="toggle"
+                    role="switch"
+                    aria-checked="false"
+                    aria-label="Switch between monthly and yearly billing"
+                >
+                    <span class="toggle-knob"></span>
+                </button>
+
+                <span id="yearly-label" class="billing-label">Yearly</span>
+                <span class="save-tag">SAVE 20%</span>
+            </div>
+        </header>
+
+        <section class="pricing-grid" aria-label="Pricing plans">
+
+            <article class="plan-card"
+             data-monthly="0"
+             data-yearly="0"
+             data-period="Free forever">
+
+
+                <div class="plan-top">
+                    <span class="plan-icon starter-icon">✳</span>
+                    <h2>Starter</h2>
+                    <p class="plan-description">For exploring ideas and getting started.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">$</span><span class="amount">0</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="billing-note">Free forever</p>
+
+                <a href="#get-started" class="plan-button secondary-button">Get started</a>
+
+                <div class="feature-heading">WHAT'S INCLUDED</div>
+                <ul class="features">
+                    <li>✓ Up to 3 projects</li>
+                    <li>✓ Basic analytics</li>
+                    <li>✓ Community support</li>
+                    <li>✓ Essential integrations</li>
+                </ul>
+            </article>
+
+            <article class="plan-card popular"
+                data-monthly="25"
+                data-yearly="240"
+                data-period="Billed annually">
+
+                <div class="ribbon popular-ribbon">POPULAR</div>
+
+                <div class="plan-top">
+                    <span class="plan-icon pro-icon">✦</span>
+                    <h2>Professional</h2>
+                    <p class="plan-description">For creators ready to do more.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">$</span><span class="amount">25</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="billing-note">Billed monthly</p>
+
+                <a href="#get-started" class="plan-button primary-button">Choose Professional ↗</a>
+
+                <div class="feature-heading">EVERYTHING IN STARTER, PLUS</div>
+                <ul class="features">
+                    <li>✓ Unlimited projects</li>
+                    <li>✓ Advanced analytics</li>
+                    <li>✓ Priority email support</li>
+                    <li>✓ Team collaboration</li>
+                    <li>✓ Custom integrations</li>
+                </ul>
+            </article>
+
+            <article class="plan-card"
+                data-monthly="49"
+                data-yearly="470"
+                data-period="Billed annually">
+
+                <div class="ribbon value-ribbon">BEST VALUE</div>
+
+                <div class="plan-top">
+                    <span class="plan-icon enterprise-icon">◆</span>
+                    <h2>Enterprise</h2>
+                    <p class="plan-description">For teams scaling without limits.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">$</span><span class="amount">49</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="billing-note">Billed monthly</p>
+
+                <a href="#get-started" class="plan-button secondary-button">Choose Enterprise ↗</a>
+
+                <div class="feature-heading">EVERYTHING IN PROFESSIONAL, PLUS</div>
+                <ul class="features">
+                    <li>✓ Unlimited team members</li>
+                    <li>✓ Dedicated account support</li>
+                    <li>✓ Advanced permissions</li>
+                    <li>✓ Custom reporting</li>
+                    <li>✓ Flexible team workflows</li>
+                </ul>
+            </article>
+        </section>
+
+        <footer class="page-footer" id="get-started">
+            <p>Thoughtful plans. No hidden fees. Change your plan whenever you need.</p>
+            <span>PLANORA · PRICING MADE SIMPLE</span>
+        </footer>
+    </main>
+</body>
+</html>
